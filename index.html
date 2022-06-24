@@ -12,9 +12,10 @@
 </head>
 
 <body class="page">
+	<!---------------------------------header--------------------------------->
 	<header class="header__index">
 		<div id="masthead">
-			<div class="header__line  header__line_padding">
+			<div class="header__line  header__line--padding">
 				<div class="logo header__logo">
 					<a href="#">
 						<img src="./img/logo.svg" alt="Logo" width="48" height="32" /></a>
@@ -26,6 +27,8 @@
 							<span></span>
 						</label>
 						<ul class="menu__box">
+							<li class="menu__li"><a class="menu__link-page" href="index.html">Home</a></li>
+							<li class="menu__li"><a class="menu__link-page" href="./pages/blogpage.html">Blog</a></li>
 							<li class="menu__li">
 								<details open>
 									<summary class="menu__marker">About US
@@ -46,6 +49,7 @@
 									</ul>
 								</details>
 							</li>
+							<li class="menu__li"><a class="menu__link-page" href="./pages/contact.html">Contact Us</a></li>
 							<li class="menu__li">
 								<details>
 									<summary class="menu__marker">Follow US
@@ -67,11 +71,33 @@
 									</ul>
 								</details>
 							</li>
+							<li class="menu__li">
+								<details>
+									<summary class="menu__marker">Example
+										<img class="menu__arrow" src="./img/menu__arrow.svg">
+									</summary>
+									<ul class="menu__ul">
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 1</a>
+										</li>
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 2</a>
+										</li>
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 3</a>
+										</li>
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 4</a>
+										</li>
+									</ul>
+								</details>
+							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
+		<!---------------------------------header-block--------------------------------->
 		<div class="header__block">
 			<div class="header__text">
 				<div class="text__title">
@@ -94,6 +120,7 @@
 
 	<main class="main">
 		<div class="container">
+			<!---------------------------------blocks--------------------------------->
 			<div class="main__blocks blocks">
 				<div class="blocks__title title">
 					What we do to help our client grow in digital era,
@@ -174,7 +201,7 @@
 			</div>
 
 			<div class="main__module subject">
-				<div class="subject_title title">
+				<div class="subject__title title">
 					Our Finished Project
 				</div>
 				<div class="subject__text">
@@ -183,7 +210,7 @@
 				</div>
 			</div>
 
-			<!---------------Cards----------------------->
+			<!---------------------------------project--------------------------------->
 			<a href="#">
 				<figure class="main__smrt-hm smrt-hm">
 					<figcaption class="smrt-hm__content">
@@ -227,11 +254,11 @@
 				</a>
 			</div>
 		</div>
-		<!----------------------------Clients---------------------------->
+		<!---------------------------------сlients--------------------------------->
 		<div class="main__clients clients">
 			<div class="container">
 				<div class="subject">
-					<div class="subject_title title title-white">
+					<div class="subject__title title title-white">
 						Our Beloved Client
 					</div>
 					<div class="subject__text text-white">
@@ -242,16 +269,25 @@
 				<div class="main__table table">
 					<table width="940" height="256">
 						<tr>
-							<th class="first "><a class="table__link" href="#">LOGO CLIENT 1</a></th>
-							<th class="first after"><a class="table__link" href="#">LOGO CLIENT 2</a></th>
-							<th class="first after"><a class="table__link" href="#">LOGO CLIENT 3</a></th>
-							<th class="first after"><a class="table__link" href="#">LOGO CLIENT 4</a></th>
+							<th class="first"><a class="table__link" href="#"><img src="./img/clients/logo-adidas.png"
+										alt="Logo Adidas"></a>
+							</th>
+							<th class="first after"><a class="table__link" href="#"><img src="./img/clients/logo-telegram.png"
+										alt="Logo Telegram"></a></th>
+							<th class="first after"><a class="table__link" href="#"><img src="./img/clients/logo-apple.png"
+										alt="Logo Apple"></a></th>
+							<th class="first after"><a class="table__link" href="#"><img src="./img/clients/logo-asus.png"
+										alt="Logo Asus"></a></th>
 						</tr>
 						<tr>
-							<th><a class="table__link" href="#">LOGO CLIENT 5</a></th>
-							<th class="after"><a class="table__link" href="#">LOGO CLIENT 6</a></th>
-							<th class="after"><a class="table__link" href="#">LOGO CLIENT 7</a></th>
-							<th class="after after-last"><a class="table__link" href="#">More Client</a></th>
+							<th><a class="table__link" href="#"><img src="./img/clients/logo-audi.png" alt="Logo Audi"></a>
+							</th>
+							<th class="after"><a class="table__link" href="#"><img src="./img/clients/logo-bitcoin.png"
+										alt="Logo Bitcoin"></a></th>
+							<th class="after"><a class="table__link" href="#"><img src="./img/clients/logo-bmw.png"
+										alt="Logo Bmw"></a>
+							</th>
+							<th class="after after-last"><a class="table__link table__link--last" href="#">More Client</a></th>
 						</tr>
 					</table>
 				</div>
@@ -259,6 +295,7 @@
 		</div>
 		</div>
 	</main>
+	<!---------------------------------footer--------------------------------->
 	<footer class="footer__index">
 		<div class="footer">
 			<div class="footer__module">

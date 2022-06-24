@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="../fonts/Gilroy/stylesheet.css" />
 	<link rel="stylesheet" href="../fonts/Galien/stylesheet.css" />
 	<script src="https://yastatic.net/share2/share.js" defer></script>
-	<title>Blog page</title>
+	<title>Blog</title>
 </head>
 
 <body class="page">
@@ -26,6 +26,8 @@
 						<span></span>
 					</label>
 					<ul class="menu__box">
+						<li class="menu__li"><a class="menu__link-page" href="../index.html">Home</a></li>
+						<li class="menu__li"><a class="menu__link-page" href="./blogpage.html">Blog</a></li>
 						<li class="menu__li">
 							<details open>
 								<summary class="menu__marker">About US
@@ -46,6 +48,7 @@
 								</ul>
 							</details>
 						</li>
+						<li class="menu__li"><a class="menu__link-page" href="./contact.html">Contact Us</a></li>
 						<li class="menu__li">
 							<details>
 								<summary class="menu__marker">Follow US
@@ -63,6 +66,27 @@
 									</li>
 									<li class="menu__list">
 										<a class="menu__link" href="#">Youtube</a>
+									</li>
+								</ul>
+							</details>
+						</li>
+						<li class="menu__li">
+							<details>
+								<summary class="menu__marker">Example
+									<img class="menu__arrow" src="./img/menu__arrow.svg">
+								</summary>
+								<ul class="menu__ul">
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 1</a>
+									</li>
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 2</a>
+									</li>
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 3</a>
+									</li>
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 4</a>
 									</li>
 								</ul>
 							</details>
@@ -93,21 +117,19 @@
 				</div>
 				<article class="news news-first">
 					<a class="all-unset" href="#">
-						<img class="news__img_first" src="../img/house.jpg" alt="" width="540px" height="380px" /></a>
+						<img class="news__img--first" src="../img/house.jpg" alt="" width="540px" height="380px" /></a>
 					<div class="news__text-box">
 						<a class="all-unset" href="#">
-							<div class="news__title_first">
+							<div class="news__title--first">
 								Feugiat sodales at nullam tellus.
 							</div>
-							<div class="news__text_first">
+							<div class="news__text--first">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 								labore
 								et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.
 							</div>
 						</a>
-
-
-						<div class="news__info-news info-news news__info-news_first">
+						<div class="news__info-news info-news news__info-news--first">
 							<div class="info-news__text">
 								<div class="info-news__name">
 									<a class="all-unset" href="#">
@@ -131,7 +153,7 @@
 				<article class="line-news__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/paper.jpg" alt="" width="300px" height="200px" />
-						<div class="news__title news__title_line">
+						<div class="news__title news__title--line">
 							Porta proin tellus sed pulvinar odio eu pulvinar.
 						</div>
 						<div class="news__text news__text-line">
@@ -160,7 +182,7 @@
 				<article class="line-news__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/forbidden-city.jpg" alt="" width="300px" height="200px" />
-						<div class="news__title news__title_line">
+						<div class="news__title news__title--line">
 							Non quam tortor, proin eu egestas scelerisque purus.
 						</div>
 						<div class="news__text news__text-line">
@@ -189,7 +211,7 @@
 				<article class="line-news__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/laptop.jpg" alt="" width="300px" height="200px" />
-						<div class="news__title news__title_line">
+						<div class="news__title news__title--line">
 							Amet amet sed pharetra risus sit eget interdum.
 						</div>
 						<div class="news__text news__text-line">
@@ -217,7 +239,7 @@
 					</div>
 				</article>
 			</div>
-			<div class="title-module title-module_line">
+			<div class="title-module title-module--line">
 				<a class="all-unset" href="#">
 					See All Popular Article
 				</a>
@@ -232,9 +254,9 @@
 				<article class="article__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/wheel.jpg" alt="" width="300px" height="200px" /></a>
-					<div class="news__text-box_one">
+					<div class="news__text-box--one">
 						<a class="all-unset" href="#">
-							<div class="news__title news__title_one">
+							<div class="news__title news__title--one">
 								Massa eu in laoreet enim augue vulputate nunc.
 							</div>
 							<div class="news__text">
@@ -266,9 +288,9 @@
 				<article class="article__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/color.jpg" alt="" width="300px" height="200px" /></a>
-					<div class="news__text-box_one">
+					<div class="news__text-box--one">
 						<a class="all-unset" href="#">
-							<div class="news__title news__title_one">
+							<div class="news__title news__title--one">
 								Feugiat a euismod arcu feugiat posuere morbi.
 							</div>
 							<div class="news__text">
@@ -300,9 +322,9 @@
 				<article class="article__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/sheet.jpg" alt="" width="300px" height="200px" /></a>
-					<div class="news__text-box_one">
+					<div class="news__text-box--one">
 						<a class="all-unset" href="#">
-							<div class="news__title news__title_one">
+							<div class="news__title news__title--one">
 								Sociis purus pellentesque faucibus vitae et felis.
 							</div>
 							<div class="news__text">
@@ -334,9 +356,9 @@
 				<article class="article__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/cursus.jpg" alt="" width="300px" height="200px" /></a>
-					<div class="news__text-box_one">
+					<div class="news__text-box--one">
 						<a class="all-unset" href="#">
-							<div class="news__title news__title_one">
+							<div class="news__title news__title--one">
 								Cursus feugiat mi pellentesque mauris sed eu.
 							</div>
 							<div class="news__text">
@@ -368,9 +390,9 @@
 				<article class="article__news news">
 					<a class="all-unset" href="#">
 						<img class="news__img" src="../img/pc.jpg" alt="" width="300px" height="200px" /></a>
-					<div class="news__text-box_one">
+					<div class="news__text-box--one">
 						<a class="all-unset" href="#">
-							<div class="news__title news__title_one">
+							<div class="news__title news__title--one">
 								A morbi arcu curabitur etiam fringilla augue.
 							</div>
 							<div class="news__text">
@@ -400,11 +422,11 @@
 				</article>
 				<div class="page__control control flex">
 					<a class="all-unset" href="#">
-						<div class="control__link control__link_direction">
+						<div class="control__link control__link--direction">
 							<div class="control__txt">
 								New Post
 							</div>
-							<div class="control__img control__img_rotate">
+							<div class="control__img control__img--rotate">
 								<img src="../img/arrow.svg" alt="" width="16" height="16" />
 							</div>
 						</div>
