@@ -4,7 +4,6 @@
  }
  .page {
 	min-width: 1366px;
-	
 	margin: 0 auto;
 	padding: 0;
 	font-family: "Gilroy", sans-serif, Arial;
@@ -20,7 +19,7 @@
 }
  .header__index {
 	background: linear-gradient(0deg, rgba(152, 195, 232, 0.2) 8.84%, rgb(255, 255, 255) 31.12%);
-	height: 768px;
+	height: 651px;
 }
 .header__line{
 	background-color: rgb(255, 255, 255);
@@ -225,15 +224,25 @@ details[open] > summary > .menu__arrow {
 }
 /*конец бургер-меню*/
 .header__block {
-	height: 680px;
-	padding: 0px 240px;
-	margin: 0 auto;
-	width: 1366px;
+	box-sizing: border-box;
+   margin: 122px auto 0px auto;
+}
+.header__content{
+	position: relative;
+	margin:0px auto;
+	width: 950px;
 }
 .header__text{
-	position: absolute;
+	display: inline-block;
+	padding-top: 63px;
+	/*position: absolute;
 	top: 185px;
-	z-index: 10;
+	z-index: 10;*/
+}
+.header__img {
+	display: inline-block;
+	position: absolute;
+	left: 448px;
 }
 .header-page{
 	margin: 130px auto 0px auto;
@@ -262,7 +271,6 @@ details[open] > summary > .menu__arrow {
 	letter-spacing: 0.04em;
 	color: rgba(255, 255, 255, 0.4);
 }
-
 .text__title {
 	font-family: 'Galien';
 	font-size: 59px;
@@ -270,12 +278,13 @@ details[open] > summary > .menu__arrow {
 	letter-spacing: 0.5px;
 	color: #1F3F68;
 	width: 545px;
-	margin-bottom: 32px;
+	margin-bottom: 38px;
 	font-weight: 600;
 }
 .text__subtitle {
 	width: 442px;
 	margin-bottom: 75px;
+	padding-left: 5px;
 }
 .btn {
 	width: 218px;
@@ -284,7 +293,9 @@ details[open] > summary > .menu__arrow {
 	border-radius: 10px;
 	border-width:0px;
 	transition: 0.3s ease all;
-	
+}
+.header__btn{
+	margin-left: 5px;
 }
 .btn:hover{
 	background: #1F3F68;
@@ -304,11 +315,6 @@ details[open] > summary > .menu__arrow {
 	text-decoration: none; 
 }
 
-.header__img {
-	position: relative;
-	left: 440px;
-	top: 122px;
-}
 .main {
 	width: 1366px;
 	margin: 160px auto 0px auto;
@@ -1011,7 +1017,7 @@ position: relative;
 	margin: 0px auto;
 	width: 1366px;
 	background-color: #5A98D0;
-	padding-top: 128px;
+	padding-top: 114px;
 }
 .footer__module {
 	display: flex;
@@ -1144,3 +1150,7 @@ position: relative;
 .footer__copy{
 	margin-top: 49px;
 }
+
+@media (min-width: 600px) and (max-width: 800px) {
+	/* CSS-стили */;
+	}
