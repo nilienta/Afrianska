@@ -12,12 +12,13 @@
 </head>
 
 <body class="page">
+	<!---------------------------------header--------------------------------->
 	<header class="header__index">
 		<div id="masthead">
-			<div class="header__line  header__line_padding">
+			<div class="header__line  header__line--padding">
 				<div class="logo header__logo">
 					<a href="#">
-						<img src="./img/logo.svg" alt="Logo" width="48" height="32" /></a>
+						<img class="logo--height" src="./img/logo.svg" alt="Logo" width="48" height="32" /></a>
 				</div>
 				<nav class="nav header__nav">
 					<div class="hamburger-menu">
@@ -26,6 +27,8 @@
 							<span></span>
 						</label>
 						<ul class="menu__box">
+							<li class="menu__li"><a class="menu__link-page" href="index.html">Home</a></li>
+							<li class="menu__li"><a class="menu__link-page" href="./pages/blogpage.html">Blog</a></li>
 							<li class="menu__li">
 								<details open>
 									<summary class="menu__marker">About US
@@ -46,6 +49,7 @@
 									</ul>
 								</details>
 							</li>
+							<li class="menu__li"><a class="menu__link-page" href="./pages/contact.html">Contact Us</a></li>
 							<li class="menu__li">
 								<details>
 									<summary class="menu__marker">Follow US
@@ -67,198 +71,238 @@
 									</ul>
 								</details>
 							</li>
+							<li class="menu__li">
+								<details>
+									<summary class="menu__marker">Example
+										<img class="menu__arrow" src="./img/menu__arrow.svg">
+									</summary>
+									<ul class="menu__ul">
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 1</a>
+										</li>
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 2</a>
+										</li>
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 3</a>
+										</li>
+										<li class="menu__list">
+											<a class="menu__link" href="#">Link 4</a>
+										</li>
+									</ul>
+								</details>
+							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
+		<!---------------------------------header-block--------------------------------->
 		<div class="header__block">
-			<div class="header__text">
-				<div class="text__title">
-					New Automation Tool for Your Home
+			<div class="header__content">
+				<div class="header__img">
+					<img class="header__img--width" src="./img/illustration.svg" alt="Header picture" />
 				</div>
-				<div class="text__subtitle">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris
-					tellus at. Posuere sollicitudin odio tellus elit.
+				<div class="header__text">
+					<div class="text__title">
+						New Automation Tool for Your Home
+					</div>
+					<div class="text__subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut
+						mauris
+						tellus at. Posuere sollicitudin odio tellus elit.
+					</div>
+					<div class="btn header__btn">
+						<a href="#" class="text__btn">See Our Project</a>
+					</div>
 				</div>
-				<div class="btn">
-					<a href="#" class="text__btn">See Our Project</a>
-				</div>
-			</div>
-
-			<div class="header__img">
-				<img src="./img/illustration.svg" alt="" width="688" height="590" />
 			</div>
 		</div>
 	</header>
 
 	<main class="main">
-		<div class="container">
-			<div class="main__blocks blocks">
-				<div class="blocks__title title">
-					What we do to help our client grow in digital era,
-				</div>
-				<div class="main__block block">
-					<div class="block__img2">
-						<img src="./img/2.svg" alt="" width="192" height="132" />
-					</div>
-					<div class="block__title">
-						<a href="#" class="block__link-title">
-							Make Your business To Be Better Famous In Internet
-						</a>
-					</div>
-					<div class="block__subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.
-					</div>
-					<div class="block__lrn-more">
-						<a href="#" class="lrn-more">
-							<div class="lrn-more__txt">
-								Learn more
-							</div>
-							<div class="lrn-more__img">
-								<img src="./img/arrow.svg" alt="" width="16" height="16" />
-							</div>
-						</a>
-					</div>
-				</div>
-				<div style="break-after: column; margin: 0.2em 0 0;"></div>
-				<div class="main__block block">
-					<div class="block__img1">
-						<img src="./img/1.svg" alt="" width="255" height="208" />
-					</div>
-					<div class="block__title">
-						<a href="#" class="block__link-title">
-							Bring Technology To Your Comfrotable Home
-						</a>
-					</div>
-					<div class="block__subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.
-					</div>
-					<div class="block__lrn-more">
-						<a href="#" class="lrn-more">
-							<div class="lrn-more__txt">
-								Learn more
-							</div>
-							<div class="lrn-more__img">
-								<img src="./img/arrow.svg" alt="" width="16" height="16" />
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="main__block block">
-					<div class="block__img3">
-						<img src="./img/3.svg" alt="" width="171" height="132" />
-					</div>
-					<div class="block__title">
-						<a href="#" class="block__link-title">
-							Build Your Digital Product That Suitable For Your Need
-						</a>
-					</div>
-					<div class="block__subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.
-					</div>
-					<div class="block__lrn-more">
-						<a href="#" class="lrn-more">
-							<div class="lrn-more__txt">
-								Learn more
-							</div>
-							<div class="lrn-more__img">
-								<img src="./img/arrow.svg" alt="" width="16" height="16" />
-							</div>
-						</a>
-					</div>
-				</div>
+		<!---------------------------------blocks--------------------------------->
+		<div class="main__blocks blocks">
+			<div class="blocks__title title">
+				What we do to help our client grow in digital era,
 			</div>
-
-			<div class="main__module subject">
-				<div class="subject_title title">
-					Our Finished Project
+			<div class="block main__block main__block--margin">
+				<div class="block__img2">
+					<img class="block__img--height--82" src="./img/2.svg" alt="" width="192" height="132" />
 				</div>
-				<div class="subject__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Ut enim ad minim veniam.
+				<div class="block__title">
+					<a href="#" class="block__link-title">
+						Make Your business To Be Better Famous In Internet
+					</a>
 				</div>
-			</div>
-
-			<!---------------Cards----------------------->
-			<a href="#">
-				<figure class="main__smrt-hm smrt-hm">
-					<figcaption class="smrt-hm__content">
-						<div class="heading">
-							Smart Home Installation
+				<div class="block__subtitle">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua.
+				</div>
+				<div class="block__lrn-more">
+					<a href="#" class="lrn-more">
+						<div class="lrn-more__txt">
+							Learn more
 						</div>
-						<div class="smrt-hm__desc desc">
-							In Muarakana Housing Estate
+						<div class="lrn-more__img">
+							<img class="lrn-more__img--height" src="./img/arrow.svg" alt="" width="16" height="16" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="block-break"></div>
+			<div class="main__block block">
+				<div class="block__img1">
+					<img class="block__img--height--139" src="./img/1.svg" alt="" width="255" height="208" />
+				</div>
+				<div class="block__title">
+					<a href="#" class="block__link-title">
+						Bring Technology To Your Comfrotable Home
+					</a>
+				</div>
+				<div class="block__subtitle">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua.
+				</div>
+				<div class="block__lrn-more">
+					<a href="#" class="lrn-more">
+						<div class="lrn-more__txt">
+							Learn more
+						</div>
+						<div class="lrn-more__img">
+							<img class="lrn-more__img--height" src="./img/arrow.svg" alt="" width="16" height="16" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="main__block block">
+				<div class="block__img3">
+					<img class="block__img--height--82" src="./img/3.svg" alt="" width="171" height="132" />
+				</div>
+				<div class="block__title">
+					<a href="#" class="block__link-title">
+						Build Your Digital Product That Suitable For Your Need
+					</a>
+				</div>
+				<div class="block__subtitle">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua.
+				</div>
+				<div class="block__lrn-more">
+					<a href="#" class="lrn-more">
+						<div class="lrn-more__txt">
+							Learn more
+						</div>
+						<div class="lrn-more__img">
+							<img class="lrn-more__img--height" src="./img/arrow.svg" alt="" width="16" height="16" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="block-break"></div>
+		</div>
+
+		<div class="main__subject subject">
+			<div class="subject__title title">
+				Our Finished Project
+			</div>
+			<div class="subject__text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+				et
+				dolore magna aliqua. Ut enim ad minim veniam.
+			</div>
+		</div>
+		<!---------------------------------project--------------------------------->
+
+		<a href="#">
+			<figure class="main__project project">
+				<figcaption class="project__content">
+					<div class="heading">
+						Smart Home Installation
+					</div>
+					<div class="project__desc desc">
+						In Muarakana Housing Estate
+					</div>
+				</figcaption>
+				<img class="wafer wafer--width" src="./img/Mask Group.jpg" alt="" />
+				<img class="wafer-svg__icons" src="./img/Mask Group-icons.jpg" alt="" />
+			</figure>
+		</a>
+		<div class="main__line line">
+			<a class="card__link" href="#">
+				<figure class="line__card card">
+					<figcaption class="card__content">
+						<div class="heading">
+							Sparklite App
+						</div>
+						<div class="card__desc desc">
+							Marketplace
 						</div>
 					</figcaption>
-					<img class="wafer" src="./img/Mask Group.jpg" alt="" />
-					<img class="wafer-svg__icons" src="./img/Mask Group-icons.jpg" alt="" />
+					<img class="wafer wafer-card" src="./img/sparkliteApp.jpg" alt="Sparklite App" />
 				</figure>
 			</a>
-			<div class="main__line line">
-				<a href="#">
-					<figure class="line__card card">
-						<figcaption class="card__content">
-							<div class="heading">
-								Sparklite App
-							</div>
-							<div class="card__desc desc">
-								Marketplace
-							</div>
-						</figcaption>
-						<img class="wafer wafer-card" src="./img/sparkliteApp.jpg" alt="" width="422" height="417" />
-					</figure>
-				</a>
-				<a class="card__link" href="#">
-					<figure class="line__card card">
-						<figcaption class="card__content">
-							<div class="heading">
-								Car-Rapetition App
-							</div>
-							<div class="card__desc desc">
-								Board
-							</div>
-						</figcaption>
-						<img class="wafer wafer-card" src="./img/Car-RapetitionApp.jpg" alt="" width="422" height="417" />
-					</figure>
-				</a>
-			</div>
+			<a class="card__link" href="#">
+				<figure class="line__card card">
+					<figcaption class="card__content">
+						<div class="heading">
+							Car-Rapetition App
+						</div>
+						<div class="card__desc desc">
+							Board
+						</div>
+					</figcaption>
+					<img class="wafer wafer-card" src="./img/Car-RapetitionApp.jpg" alt="Car-Rapetition App" />
+				</figure>
+			</a>
 		</div>
-		<!----------------------------Clients---------------------------->
+		<!---------------------------------сlients--------------------------------->
 		<div class="main__clients clients">
-			<div class="container">
-				<div class="subject">
-					<div class="subject_title title title-white">
-						Our Beloved Client
-					</div>
-					<div class="subject__text text-white">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-						et dolore magna aliqua. Ut enim ad minim veniam.
-					</div>
+
+			<div class="clients__subject subject">
+				<div class="subject__title title title-white">
+					Our Beloved Client
 				</div>
-				<div class="main__table table">
-					<table width="940" height="256">
-						<tr>
-							<th class="first "><a class="table__link" href="#">LOGO CLIENT 1</a></th>
-							<th class="first after"><a class="table__link" href="#">LOGO CLIENT 2</a></th>
-							<th class="first after"><a class="table__link" href="#">LOGO CLIENT 3</a></th>
-							<th class="first after"><a class="table__link" href="#">LOGO CLIENT 4</a></th>
-						</tr>
-						<tr>
-							<th><a class="table__link" href="#">LOGO CLIENT 5</a></th>
-							<th class="after"><a class="table__link" href="#">LOGO CLIENT 6</a></th>
-							<th class="after"><a class="table__link" href="#">LOGO CLIENT 7</a></th>
-							<th class="after after-last"><a class="table__link" href="#">More Client</a></th>
-						</tr>
-					</table>
+				<div class="subject__text text-white">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+					labore
+					et dolore magna aliqua. Ut enim ad minim veniam.
 				</div>
 			</div>
-		</div>
+			<div class="main__table">
+				<table class="table">
+					<tr>
+						<th class="first"><a class="table__cell" href="#"><img class="table__cell--height"
+									src="./img/clients/logo-adidas.png" alt="Logo Adidas"></a>
+						</th>
+						<th class="first after"><a class="table__cell" href="#"><img class="table__cell--height"
+									src="./img/clients/logo-telegram.png" alt="Logo Telegram"></a></th>
+						<th class="first after"><a class="table__cell" href="#"><img class="table__cell--height"
+									src="./img/clients/logo-apple.png" alt="Logo Apple"></a></th>
+						<th class="first after"><a class="table__cell" href="#"><img class="table__cell--height"
+									src="./img/clients/logo-asus.png" alt="Logo Asus"></a></th>
+					</tr>
+					<tr>
+						<th><a class="table__cell" href="#"><img class="table__cell--height" src="./img/clients/logo-audi.png"
+									alt="Logo Audi"></a>
+						</th>
+						<th class="after"><a class="table__cell" href="#"><img class="table__cell--height"
+									src="./img/clients/logo-bitcoin.png" alt="Logo Bitcoin"></a></th>
+						<th class="after"><a class="table__cell" href="#"><img class="table__cell--height"
+									src="./img/clients/logo-bmw.png" alt="Logo Bmw"></a>
+						</th>
+						<th class="after after-last"><a class="table__cell table__cell--last" href="#">More
+								Client</a>
+						</th>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</main>
+	<!---------------------------------footer--------------------------------->
 	<footer class="footer__index">
 		<div class="footer">
 			<div class="footer__module">
@@ -267,7 +311,8 @@
 						Intersted to woek with our team?
 					</div>
 					<div class="text-white">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore
 						et
 						dolore magna aliqua. Ut enim ad minim veniam.
 					</div>
@@ -280,7 +325,7 @@
 			<div class="footer__contacts">
 				<div class="footer__group">
 					<div class="footer__logo">
-						<img src="./img/logo--blue.svg" alt="Logo" width="48" height="32" />
+						<img class="logo--height" src="./img/logo--blue.svg" alt="Logo" />
 						<div class="footer__caption ">
 							Afrianska
 						</div>

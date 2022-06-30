@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../fonts/Gilroy/stylesheet.css" />
 	<link rel="stylesheet" href="../fonts/Galien/stylesheet.css" />
-	<title>ContactUs page</title>
+	<title>Contact Us</title>
 </head>
 
 <body class="page">
@@ -25,6 +25,8 @@
 						<span></span>
 					</label>
 					<ul class="menu__box">
+						<li class="menu__li"><a class="menu__link-page" href="../index.html">Home</a></li>
+						<li class="menu__li"><a class="menu__link-page" href="./blogpage.html">Blog</a></li>
 						<li class="menu__li">
 							<details open>
 								<summary class="menu__marker">About US
@@ -45,6 +47,7 @@
 								</ul>
 							</details>
 						</li>
+						<li class="menu__li"><a class="menu__link-page" href="./contact.html">Contact Us</a></li>
 						<li class="menu__li">
 							<details>
 								<summary class="menu__marker">Follow US
@@ -66,6 +69,27 @@
 								</ul>
 							</details>
 						</li>
+						<li class="menu__li">
+							<details>
+								<summary class="menu__marker">Example
+									<img class="menu__arrow" src="../img/menu__arrow.svg">
+								</summary>
+								<ul class="menu__ul">
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 1</a>
+									</li>
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 2</a>
+									</li>
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 3</a>
+									</li>
+									<li class="menu__list">
+										<a class="menu__link" href="#">Link 4</a>
+									</li>
+								</ul>
+							</details>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -81,70 +105,69 @@
 		</div>
 	</div>
 	<main class="main-page">
-		<div class="container">
-			<div class="contact">
-				<div class="contact__wrap">
-					<div class="contact__img">
-						<img src="../img/girl-on-poof.svg" alt="Navigation menu" width="301" height="181" />
-					</div>
-					<div class="contact__h2">
-						ADDRESS
-					</div>
-					<div class="contact__p">
-						Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.
-					</div>
-					<div class="contact__h2">
-						PHONE
-					</div>
-					<ul class="contact__ul">
-						<li class="contact__li">
-							<a class="contact__link" href="tel:+62-812-7313-4321">+62-812-7313-4321</a>
-						</li>
-						<li class="contact__li">
-							<a class="contact__link" href="tel:+62-817-000-1234">+62-817-000-1234</a>
-						</li>
-					</ul>
-					<div class="contact__h2">
-						ONLINE SERVICE
-					</div>
-					<ul class="contact__ul">
-						<li class="contact__li contact__li_globe">
-							<a class="contact__link" href="http://www.afrianska.com">www.afrianska.com</a>
-						</li>
-						<li class="contact__li contact__li_mail">
-							<a class="contact__link" href="mailto:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
-						</li>
-					</ul>
+		<div class="main__contact contact">
+			<div class="contact__wrap">
+				<div class="contact__img">
+					<img src="../img/girl-on-poof.svg" alt="Navigation menu" width="301" height="181" />
 				</div>
-				<div class="message">
-					<div class="contact__h2 contact__h2-mess">
-						SEND US MESSAGE
-					</div>
-					<form method="post" class="form">
-						<div class="form__h3">
-							Full Name
-						</div>
-						<input class="form__input" type="text" name="name" title="Enter your name" placeholder="Your Name"
-							required>
-						<div class="form__h3">
-							Email
-						</div>
-						<input class="form__input" type="text" name="email" title="Enter your Email" placeholder="Your Email"
-							required>
-						<div class="form__h3">
-							Message
-						</div>
-						<textarea class="form__textarea" name="mess" title="Enter your  message" placeholder="Your Message"
-							required></textarea>
-						<input class="form__btn btn" type="submit" value="SUBMIT">
-					</form>
+				<div class="contact__h2">
+					ADDRESS
 				</div>
+				<div class="contact__p">
+					Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.
+				</div>
+				<div class="contact__h2">
+					PHONE
+				</div>
+				<ul class="contact__ul">
+					<li class="contact__li">
+						<a class="contact__link" href="tel:+62-812-7313-4321">+62-812-7313-4321</a>
+					</li>
+					<li class="contact__li">
+						<a class="contact__link" href="tel:+62-817-000-1234">+62-817-000-1234</a>
+					</li>
+				</ul>
+				<div class="contact__h2">
+					ONLINE SERVICE
+				</div>
+				<ul class="contact__ul">
+					<li class="contact__li contact__li--globe">
+						<a class="contact__link" href="http://www.afrianska.com">www.afrianska.com</a>
+					</li>
+					<li class="contact__li contact__li--mail">
+						<a class="contact__link" href="mailto:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
+					</li>
+				</ul>
 			</div>
-			<div class="map">
-				<script type="text/javascript" charset="utf-8" async
-					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d02db94bccee3a243d6c40036e7ee577c23dfb55bd366e655ef3db33de3cd15&amp;width=940&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+			<div class="message">
+				<div class="contact__h2 contact__h2-mess">
+					SEND US MESSAGE
+				</div>
+				<form method="post" class="form">
+					<div class="form__h3">
+						Full Name
+					</div>
+					<input class="form__input" type="text" name="name" title="Enter your name" placeholder="Your Name"
+						required>
+					<div class="form__h3">
+						Email
+					</div>
+					<input class="form__input" type="text" name="email" title="Enter your Email" placeholder="Your Email"
+						required>
+					<div class="form__h3">
+						Message
+					</div>
+					<textarea class="form__textarea" name="mess" title="Enter your  message" placeholder="Your Message"
+						required></textarea>
+					<input class="form__btn btn" type="submit" value="SUBMIT">
+				</form>
 			</div>
 		</div>
+		<div class="main__map map">
+			<script type="text/javascript" charset="utf-8" async
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d02db94bccee3a243d6c40036e7ee577c23dfb55bd366e655ef3db33de3cd15&amp;width=940&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+
 	</main>
 	<footer class="footer__page">
 		<div class="footer">
