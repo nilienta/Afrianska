@@ -1,3 +1,17 @@
+@font-face {
+	font-family: "Gilroy Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Roboto"),
+		  url("../fonts/Gilroy-Regular.woff") format("woff");
+ }
+ @font-face {
+	font-family: "Galien Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Roboto"),
+		  url("../fonts/Galien-Regular.otf") format("otf");
+ }
  .all-unset{
 	all:unset;
 	cursor: pointer;
@@ -5,7 +19,7 @@
  .page {
 	margin: 0 auto;
 	padding: 0;
-	font-family: "Gilroy", sans-serif, Arial;
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	color:#1F3F68;
 	font-size: 16px;
 	line-height: 26px;
@@ -127,35 +141,27 @@
 	content: '';
 	top: 7px;
  }
- 
 .menu__box {
 	display: block;
 	position: fixed;
 	visibility: hidden;
 	top: 0;
 	right: -100%;
-
 	width: 394px;
 	height: 100%;
- 
-	box-sizing: border-box;
+ 	box-sizing: border-box;
 	margin: 0;
 	padding: 80px 50px;
- 
-	list-style: none;
- 
-	background: #5A98D0;
+ 	list-style: none;
+ 	background: #5A98D0;
 	border-radius: 50px 0px 0px 0px;
-
-	
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
 	width: 600;
- 
-	transition-duration: .25s;
+ 	transition-duration: .25s;
  }
  .menu__li{
 	margin-top: 20px;
@@ -169,7 +175,7 @@
 	list-style-position: inside;
 }
 .menu__link{
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 42px;
 	letter-spacing: 0.05em;
@@ -185,7 +191,7 @@
 	background-size: 100% 1px;
 }
 .menu__link-page{
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 0.05em;
@@ -210,25 +216,8 @@
 details[open] > summary > .menu__arrow {
 	transform: rotate(360deg);
 }
-.menu__item {
-	display: block;
-	padding: 12px 24px;
- 
-	color: #333;
- 
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: 600;
- 
-	text-decoration: none;
- 
-	transition-duration: .25s;
- }
 .menu__marker{
 	display: block;
-}
-.menu__item:hover {
-	background-color: #CFD8DC;
 }
 /*конец бургер-меню*/
 .header__block {
@@ -260,7 +249,7 @@ details[open] > summary > .menu__arrow {
 	padding-top: 46px;
 }
 .header-page__title {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 44px;
 	line-height: 74px;
 	text-align: center;
@@ -272,7 +261,7 @@ details[open] > summary > .menu__arrow {
 	width: 780px;
 	margin-left: 293px;
 	margin-top: 20px;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
@@ -280,13 +269,13 @@ details[open] > summary > .menu__arrow {
 	color: rgba(255, 255, 255, 0.4);
 }
 .text__title {
-	font-family: 'Galien';
-	font-size: 59px;
-	line-height: 124%;
+	font-family: "Galien Regular", "Georgia", serif;
+	font-size: 50px;
+   line-height: 76px;
 	letter-spacing: 0.5px;
 	color: #1F3F68;
 	width: 545px;
-	margin-bottom: 38px;
+	margin-bottom: 35px;
 	font-weight: 600;
 }
 .text__subtitle {
@@ -315,7 +304,7 @@ details[open] > summary > .menu__arrow {
 	padding: 15px 0px;
 	box-sizing: border-box;
 	text-align: center;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 162%;
 	letter-spacing: 0.04em;
@@ -348,7 +337,7 @@ details[open] > summary > .menu__arrow {
 	height: 56px;
 	border: none;
 	outline: none;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	color: #1F3F68;
@@ -380,7 +369,7 @@ details[open] > summary > .menu__arrow {
 	margin-top: 25px;	
 }
 .title {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 36px;
 	line-height: 128%;
 	letter-spacing: 0.05em;
@@ -423,7 +412,7 @@ details[open] > summary > .menu__arrow {
 	margin-top: 56px;
 }
 .block__link-title{
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	letter-spacing: 0.97px;
 	line-height: 150%;
@@ -436,7 +425,7 @@ details[open] > summary > .menu__arrow {
 }
 .block__subtitle {
 	margin-top: 16px;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 162%;
 	letter-spacing: 0.05em;
@@ -458,7 +447,7 @@ details[open] > summary > .menu__arrow {
 	width: 284px;
 }
 .lrn-more__txt {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 14px;
 	line-height: 214%;
 	letter-spacing: 0.05em;
@@ -510,7 +499,7 @@ details[open] > summary > .menu__arrow {
 	opacity: 0.5;
 }
 .heading {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 28px;
 	line-height: 146%;
 	letter-spacing: 0.05em;
@@ -549,7 +538,7 @@ details[open] > summary > .menu__arrow {
 	z-index: 3;
 }
 .desc {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 288%;
 	letter-spacing: 0.73px;
@@ -633,7 +622,7 @@ details[open] > summary > .menu__arrow {
 }
 .table {
 	margin: 0px auto;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 230%;
 	letter-spacing: 0.02em;
@@ -674,7 +663,7 @@ details[open] > summary > .menu__arrow {
 .title-module {
 	width: 940px;
 	text-transform: uppercase;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 25px;
 	letter-spacing: 0.04em;
@@ -721,7 +710,7 @@ details[open] > summary > .menu__arrow {
 .news__img {
 }
 .news__title {
-	font-family: 'Galien';
+	font-family: "Galien Regular", "Georgia", serif;
 	font-size: 24px;
 	line-height: 36px;
 	color: #1F3F68;
@@ -755,7 +744,7 @@ details[open] > summary > .menu__arrow {
 	align-items: center;
 }
 .info-news__name {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 14px;
 	line-height: 171%;
 	letter-spacing: 0.04em;
@@ -770,7 +759,7 @@ details[open] > summary > .menu__arrow {
 	background-size: 100% 0.5px;
 }
 .info-news__date {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 14px;
 	line-height: 30px;
 	letter-spacing: 0.04em;
@@ -809,7 +798,6 @@ details[open] > summary > .menu__arrow {
 	justify-content: space-between;
 	flex-direction: row-reverse;
 }
-
 .news__text-box{
 	width: 380px;
 	height: 380px;
@@ -819,7 +807,7 @@ details[open] > summary > .menu__arrow {
 	margin-left: 16px;
 }
 .news__title--first {
-	font-family: 'Galien';
+	font-family: "Galien Regular", "Georgia", serif;
 	font-size: 45px;
 	line-height: 121%;
 	letter-spacing: -0.4px;
@@ -833,7 +821,7 @@ details[open] > summary > .menu__arrow {
 	width: 380px;
 	height: 150px;
 	margin-top: 36px;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 162%;
 	letter-spacing: 0.04em;
@@ -878,7 +866,7 @@ details[open] > summary > .menu__arrow {
 	flex-direction: row-reverse;
 }
 .control__txt {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: 0.04em;
@@ -909,7 +897,7 @@ details[open] > summary > .menu__arrow {
 .contact__h2 {
 	margin-top: 40px;
 	margin-bottom: 24px;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 0.04em;
@@ -934,7 +922,7 @@ details[open] > summary > .menu__arrow {
 	margin-top: 16px;
 }
 .contact__link{
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.04em;
@@ -969,7 +957,7 @@ details[open] > summary > .menu__arrow {
 }
 .form__h3{
 	margin-top: 32px;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	letter-spacing: 0.04em;
@@ -987,7 +975,7 @@ details[open] > summary > .menu__arrow {
 	border-radius: 10px;
 }
 .form__input::placeholder{
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	letter-spacing: 0.04em;
@@ -1006,7 +994,7 @@ details[open] > summary > .menu__arrow {
 	border-radius: 10px;
 }
 .form__textarea::placeholder{
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	letter-spacing: 0.04em;
@@ -1017,7 +1005,7 @@ details[open] > summary > .menu__arrow {
 	margin-top:64px;
 	width: 100%;
 	height: 72px;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 26px;
 	text-align: center;
@@ -1095,7 +1083,7 @@ details[open] > summary > .menu__arrow {
 	align-items: center;
 }
 .footer__caption  {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 28px;
 	line-height: 48px;
 	letter-spacing: 0.02em;
@@ -1136,7 +1124,7 @@ details[open] > summary > .menu__arrow {
 	left: 16px;
  }
 .footer__ul-name {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 0.05em;
@@ -1151,7 +1139,7 @@ details[open] > summary > .menu__arrow {
 }
 .footer__link{
 	text-decoration: none;
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 162%;
 	letter-spacing: 0.05em;
@@ -1176,7 +1164,7 @@ details[open] > summary > .menu__arrow {
 	margin-left: 78px;
 }
 .copy {
-	font-family: 'Gilroy';
+	font-family: "Gilroy Regular", "Arial" ,sans-serif;
 	font-size: 16px;
 	line-height: 162%;
 	letter-spacing: 0.05em;
