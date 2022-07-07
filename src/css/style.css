@@ -83,87 +83,7 @@
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-.logo {
-}
-.menu {
-}
-/*начало бургер-меню*/
-#menu__toggle {
-	opacity: 0;
-}
-#menu__toggle:checked ~ .menu__btn > span {
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-	background-color: #ffffff;
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-	top: 0;
-	-webkit-transform: rotate(0);
-	    -ms-transform: rotate(0);
-	        transform: rotate(0);
-	background-color: #ffffff;
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-	top: 0;
-	-webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	        transform: rotate(90deg);
-	background-color: #ffffff;
-}
-#menu__toggle:checked ~ .menu__box {
-	visibility: visible;
-	right: 0;
-}
-
-.menu__btn {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	position: relative;
-	top: -17px;
-
-	width: 24px;
-	height: 16px;
-
-	cursor: pointer;
-	z-index: 1;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-	display: block;
-	position: absolute;
-
-	width: 100%;
-	height: 3px;
-
-	background-color: #356ead;
-
-	-webkit-transition-duration: 0.25s;
-
-	     -o-transition-duration: 0.25s;
-
-	        transition-duration: 0.25s;
-}
-.menu__btn > span::before {
-	content: "";
-	top: -7px;
-}
-.menu__btn > span::after {
-	content: "";
-	top: 7px;
-}
 .menu__box {
-	/* display: block;
-	position: fixed;
-	visibility: hidden;
-	top: 0;
-	right: -100%; */
 	width: 394px;
 	height: 100%;
 	-webkit-box-sizing: border-box;
@@ -233,25 +153,6 @@
 .menu__link-dropdown:hover {
 	background-size: 100% 1px;
 }
-/* .menu__arrow {
-	margin-left: 8px;
-	margin-bottom: 4px;
-	-webkit-transform: rotate(180deg);
-	    -ms-transform: rotate(180deg);
-	        transform: rotate(180deg);
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
-}
-details[open] > summary > .menu__arrow {
-	-webkit-transform: rotate(360deg);
-	    -ms-transform: rotate(360deg);
-	        transform: rotate(360deg);
-} */
-.menu__marker {
-	display: block;
-}
-/*конец бургер-меню*/
 .header__block {
 	margin: 122px auto 0px auto;
 }
@@ -277,7 +178,7 @@ details[open] > summary > .menu__arrow {
 	margin: 130px auto 0px auto;
 	width: 1366px;
 	height: 204px;
-	background-image: url("/img/blog-header.svg");
+	background-image: url("../../img/blog-header.svg");
 	padding-top: 46px;
 }
 .header-page__title {
@@ -402,7 +303,7 @@ details[open] > summary > .menu__arrow {
 	left: 8px;
 	cursor: pointer;
 	border: none;
-	background: url("/img/lens.svg") 50% no-repeat;
+	background: url("../../img/lens.svg") 50% no-repeat;
 }
 .main__blocks {
 	margin: 0px auto 110px auto;
@@ -898,7 +799,7 @@ details[open] > summary > .menu__arrow {
 }
 .ya-share2__icon_more,
 .ya-share2__item_more {
-	background: url("/img/public.svg") no-repeat top !important;
+	background: url("../../img/public.svg") no-repeat top !important;
 }
 
 .news-first {
@@ -1067,7 +968,7 @@ details[open] > summary > .menu__arrow {
 	list-style: none;
 }
 .contact__li {
-	background: url("/img/phone.svg") no-repeat center left;
+	background: url("../../img/phone.svg") no-repeat center left;
 	padding-left: 40px;
 	list-style-position: inside;
 	margin-top: 16px;
@@ -1093,10 +994,10 @@ details[open] > summary > .menu__arrow {
 	background-size: 100% 2px;
 }
 .contact__li--globe {
-	background: url("/img/globe.svg") no-repeat center left;
+	background: url("../../img/globe.svg") no-repeat center left;
 }
 .contact__li--mail {
-	background: url("/img/mail.svg") no-repeat center left;
+	background: url("../../img/mail.svg") no-repeat center left;
 }
 .message {
 	-webkit-box-sizing: border-box;
@@ -1406,7 +1307,7 @@ details[open] > summary > .menu__arrow {
 }
 .footer__social {
 	display: inline-block;
-	width: 97px;
+	width: 105px;
 	margin-left: 78px;
 }
 .copy {
@@ -1572,7 +1473,7 @@ details[open] > summary > .menu__arrow {
 		 left: 321px;
 	}
 	.project__desc {
-		 margin-top: 0px;
+		 margin-top: 96px;
 	}
 	.wafer--width {
 		 width: 670px;
