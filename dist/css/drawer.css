@@ -247,7 +247,7 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   vertical-align: middle;
-  background: url('/img/menu__arrow.svg');
+  background: url('../../img/menu__arrow.svg');
 }
 
 /*! open */
