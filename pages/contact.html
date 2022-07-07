@@ -5,92 +5,73 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../src/css/style.css" />
+	<link href="../dist/css/drawer.min.css" rel="stylesheet">
 	<title>Contact Us</title>
 </head>
 
-<body class="page">
-	<header id="masthead">
-		<div class="header__line">
-			<div class="logo header__logo">
-				<a href="#">
-					<img src="../img/logo.svg" alt="Logo" width="48" height="32" /></a>
-			</div>
-			<nav class="menu header__nav">
-				<div class="hamburger-menu">
-					<input id="menu__toggle" type="checkbox" />
-					<label class="menu__btn" for="menu__toggle">
-						<span></span>
-					</label>
-					<ul class="menu__box">
-						<li class="menu__li"><a class="menu__link-page" href="../index.html">Home</a></li>
-						<li class="menu__li"><a class="menu__link-page" href="./blogpage.html">Blog</a></li>
-						<li class="menu__li">
-							<details open>
-								<summary class="menu__marker">About US
-									<img class="menu__arrow" src="../img/menu__arrow.svg">
-								</summary>
-								<ul class="menu__ul">
-									<li class="menu__list">
-										<a class="menu__link" href="#">About</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">What We Do</a>
-									</li>
-									<li class="menu__list"><a class="menu__link" href="#">Project</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">How It Work With Us</a>
-									</li>
-								</ul>
-							</details>
+<body class="page drawer drawer--right">
+	<!---------------------------------header--------------------------------->
+	<header role="banner">
+		<div id="masthead">
+			<div class="header__line">
+				<div class="logo">
+					<a href="#">
+						<img class="logo--height" src="../img/logo.svg" alt="Logo" width="48" height="32" /></a>
+				</div>
+				<button type="button" class="drawer-toggle drawer-hamburger">
+					<span class="sr-only">toggle navigation</span>
+					<span class="drawer-hamburger-icon"></span>
+				</button>
+
+				<nav class="drawer-nav menu__box" role="navigation">
+					<ul class="drawer-menu">
+						<li class="menu__li"><a class="menu__link" href="/index.html">Home</a></li>
+						<li class="menu__li"><a class="menu__link" href="../pages/blogpage.html">Blog</a>
 						</li>
-						<li class="menu__li"><a class="menu__link-page" href="./contact.html">Contact Us</a></li>
-						<li class="menu__li">
-							<details>
-								<summary class="menu__marker">Follow US
-									<img class="menu__arrow" src="../img/menu__arrow.svg">
-								</summary>
-								<ul class="menu__ul">
-									<li class="menu__list">
-										<a class="menu__link" href="#">Instagram</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">Facebook</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">LinkedIn</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">Youtube</a>
-									</li>
-								</ul>
-							</details>
+						<li class="drawer-dropdown menu__li">
+							<a class="menu__link" data-target="#" href="#" data-toggle="dropdown" role="button"
+								aria-expanded="false"> About US <span class="drawer-caret"></span>
+							</a>
+							<ul class="drawer-dropdown-menu">
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">About</a>
+								</li>
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">What We Do</a>
+								</li>
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">Project</a>
+								</li>
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">How It Work With Us</a>
+								</li>
+							</ul>
 						</li>
-						<li class="menu__li">
-							<details>
-								<summary class="menu__marker">Example
-									<img class="menu__arrow" src="../img/menu__arrow.svg">
-								</summary>
-								<ul class="menu__ul">
-									<li class="menu__list">
-										<a class="menu__link" href="#">Link 1</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">Link 2</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">Link 3</a>
-									</li>
-									<li class="menu__list">
-										<a class="menu__link" href="#">Link 4</a>
-									</li>
-								</ul>
-							</details>
+						<li class="menu__li"><a class="menu__link" href="../pages/contact.html">Contact
+								Us</a></li>
+						<li class="drawer-dropdown menu__li">
+							<a class="menu__link" data-target="#" href="#" data-toggle="dropdown" role="button"
+								aria-expanded="false"> Follow US <span class="drawer-caret"></span>
+							</a>
+							<ul class="drawer-dropdown-menu">
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">Instagram</a>
+								</li>
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">Facebook</a>
+								</li>
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">LinkedIn</a>
+								</li>
+								<li class="menu__list">
+									<a class="menu__link-dropdown" href="#">Youtube</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<div class="header-page">
@@ -251,7 +232,18 @@
 			</div>
 		</div>
 	</footer>
-	<script src="../js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Bootstrap dropdown v4.0.0-alpha -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
+	<script src="../dist/js/drawer.min.js" charset="utf-8"></script>
+	<script>
+		$(document).ready(function () {
+			$('.drawer').drawer();
+		});
+	</script>
+	<script src="../src/js/script.js"></script>
 </body>
 
 </html>
