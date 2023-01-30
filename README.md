@@ -8,7 +8,7 @@
 </details>
 
 <h4>📝&nbsp;Планы</h4>
-  &emsp;&emsp; Сделать адапативные страницы "Contact Us" и "Blog";
+  &emsp;~ сделать адапативные страницы "Contact Us" и "Blog";
 
 <h4>🖼&nbsp;Источник</h4>
   &emsp;&emsp;<a href="https://www.figma.com/file/8MRflu28KdivJ1rWFYD3tA/HTML-CSS-course-2022?node-id=0%3A1539">  <img alt="site preview" src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=Flat&logo=figma&logoColor=white"></a>
